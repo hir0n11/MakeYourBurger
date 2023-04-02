@@ -1,0 +1,97 @@
+[
+   {
+      "name": "Bun-top",
+      "kcal": 120,
+      "oz": 0.2,
+      "price": 1,
+      "min": 3,
+      "img": "img/igridients/bun_top.png",
+      "width": 0,
+      "auto": true
+   },
+   {
+      "name": "Bun-bottom",
+      "kcal": 90,
+      "oz": 0.2,
+      "price": 1,
+      "min": 3,
+      "img": "img/igridients/bun_bottom.png",
+      "width": 6,
+      "auto": true
+   },
+   {
+      "name": "Cutlet",
+      "kcal": 249,
+      "oz": 0.2,
+      "price": 4.3,
+      "min": 3,
+      "img": "img/igridients/cutlet.png",
+      "width": 3
+   },
+   {
+      "name": "Mayo",
+      "kcal": 120,
+      "oz": 0.1,
+      "price": 1.4,
+      "min": 0.5,
+      "img": "img/igridients/mayo.png",
+      "width": 1
+   },
+   {
+      "name": "Onion",
+      "kcal": 50,
+      "oz": 0.1,
+      "price": 1.1,
+      "min": 0.3,
+      "img": "img/igridients/onion.png",
+      "img_group": "img/igridients/onion_group.png",
+      "width": 3
+   },
+   {
+      "name": "Tomato",
+      "kcal": 60,
+      "oz": 0.2,
+      "price": 1,
+      "min": 0.5,
+      "img": "img/igridients/tomato.png",
+      "img_group": "img/igridients/tomato_group.png",
+      "width": 4
+   },
+   {
+      "name": "Cucumber",
+      "kcal": 70,
+      "oz": 0.2,
+      "price": 1,
+      "min": 1,
+      "img": "img/igridients/cucumber.png",
+      "img_group": "img/igridients/cucumber_group.png",
+      "width": 2.5
+   },
+   {
+      "name": "Cheese",
+      "kcal": 90,
+      "oz": 0.2,
+      "price": 1,
+      "min": 0.4,
+      "img": "img/igridients/cheese.png",
+      "width": 2.5
+   },
+   {
+      "name": "Salad",
+      "kcal": 40,
+      "oz": 0.2,
+      "price": 1,
+      "min": 1.2,
+      "img": "img/igridients/salad.png",
+      "width": 3
+   },
+   {
+      "name": "Bun",
+      "kcal": 120,
+      "oz": 0.2,
+      "price": 1,
+      "min": 1,
+      "img": "img/igridients/bun_middle.png",
+      "width": 4
+   }
+]

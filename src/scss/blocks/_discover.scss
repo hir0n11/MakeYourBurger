@@ -1,0 +1,246 @@
+.discover {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto  1fr;
+    column-gap: 2.25rem;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(720px - 86px);
+    &_build {
+        grid-template-columns: 30% 35% 35%;
+        grid-template-rows: 60% 40%;
+        height: 100%;
+        @media (max-width: 1250px) {
+            grid-template-columns: auto 450px auto;
+        }
+    }
+    &__item {
+        background-position: center bottom;
+        aspect-ratio: auto;
+        height: 100%;
+        width: 100%;
+        background-image: url(../img/burger/burger_bg.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 80px;
+        max-width: 240px;
+    }
+    &__button {
+        --width: 7.5rem;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 70%;
+        left: -50%;
+        background-color: #5243C2;
+        width: var(--width);
+        border-radius: 100%;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 16px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        color: #FFFFFF;
+        aspect-ratio: 1;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__burger {
+        position: relative;
+        width: 40%;
+        justify-self: center;
+        aspect-ratio: 2/1;
+        
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: inherit;
+            object-fit: cover;
+        }
+        &-piece {
+            position: absolute;
+            bottom: 1.875rem;
+        }
+        &-bun-top {
+            top: -92%;
+            left: 11%;
+            transform: scale(1.1) rotate(-5deg);
+            z-index: 150;
+        }
+        &-mayo-top {
+            top: -42%;
+            left: -1%;
+            transform: scale(.55) rotate(21deg);
+            z-index: 149;
+        }
+        &-salad-top {
+            top: -68%;
+            left: -13%;
+            transform: scale(.6) rotate(21deg);
+            z-index: 148;
+        }
+        &-cucumber-1 {
+            top: -105%;
+            left: -29%;
+            transform: scale(.35) rotate(21deg);
+            z-index: 148;
+        }
+        &-cucumber-2 {
+            top: -108%;
+            left: -4%;
+            transform: scale(.4) rotate(22deg);
+            z-index: 148;
+        }
+        &-cucumber-3 {
+            top: -87%;
+            left: 2%;
+            transform: scale(.35) rotate(-10deg);
+            z-index: 149;
+        }
+        &-cucumber-4 {
+            top: -88%;
+            left: 24%;
+            transform: scale(.32) rotate(41deg);
+            z-index: 148;
+        }
+        &-tomato-1 {
+            top: -52%;
+            left: -31%;
+            transform: scale(.32) rotate(-16deg);
+            z-index: 148;
+        }
+        &-tomato-2 {
+            top: -20%;
+            left: -65%;
+            transform: scale(.2) rotate(41deg);
+            z-index: 148;
+        }
+        &-tomato-3 {
+            top: -32%;
+            left: -6%;
+            transform: scale(.3) rotate(14deg);
+            z-index: 148;
+        }
+        &-tomato-4 {
+            top: -52%;
+            left: 17%;
+            transform: scale(.32) rotate(23deg);
+            z-index: 148;
+        }
+        &-cutlet {
+            top: 2%;
+            left: -3%;
+            transform: scale(0.73) rotate(-8deg);
+            z-index: 148;
+        }
+        &-onion-1 {
+            top: -16%;
+            left: -29%;
+            transform: scale(.2) rotate(-19deg);
+            z-index: 149;
+        }
+        &-onion-2 {
+            top: -17%;
+            left: 20%;
+            transform: scale(.13) rotate(21deg);
+            z-index: 149;
+        }
+        &-onion-3 {
+            top: -59%;
+            left: 45%;
+            transform: scale(.2) rotate(21deg);
+            z-index: 149;
+        }
+        &-onion-4 {
+            top: 3%;
+            left: 1%;
+            transform: scale(.35) rotate(21deg);
+            z-index: 150;
+        }   
+        &-onion-5 {
+            top: 9%;
+            left: 6%;
+            transform: scale(.35) rotate(-17deg);
+            z-index: 149;
+        }
+        &-onion-6 {
+            top: 17%;
+            left: -29%;
+            transform: scale(.3) rotate(21deg);
+            z-index: 150;
+        }
+        &-cheese {
+            top: 75%;
+            left: -3%;
+            transform: scale(.73) rotate(-13deg);
+            z-index: 148;
+        }
+        &-salad-bottom {
+            top: 75%;
+            left: -8%;
+            z-index: 148;
+        }
+        &-mayo-bottom {
+            top: 100%;
+            left: 0%;
+            transform: scale(.73) rotate(-13deg);
+            z-index: 148;
+        }
+        &-bun-bottom {
+            top: 97%;
+            left: 3%;
+            transform: scale(.73) rotate(-13deg);
+            z-index: 148;
+        }
+        &-emoji-1 {
+            top: 42%;
+            left: -49%;
+            transform: scale(0.18) rotate(2deg);
+            z-index: 148;
+            animation: fade 0.5s forwards;
+            opacity: 0;
+        }
+        &-emoji-2 {
+            top: -34%;
+            left: 53%;
+            transform: scale(.08) rotate(2deg);
+            z-index: 148;
+            animation: fade 0.5s forwards;
+            opacity: 0;
+        }
+        &-emoji-3 {
+            top: -78%;
+            left: 34%;
+            transform: scale(.12) rotate(2deg);
+            z-index: 147;
+            animation: fade 0.5s forwards;
+            opacity: 0;
+        }
+        &-emoji-4 {
+            top: -71%;
+            left: -51%;
+            transform: scale(.08) rotate(2deg);
+            z-index: 147;
+            animation: fade 0.5s forwards; 
+            opacity: 0;
+        }
+    }
+}
+
